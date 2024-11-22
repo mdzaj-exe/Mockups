@@ -28,7 +28,7 @@ header {
 }
 
 .logo-image img {
-  width: 80px;
+  width: 80px; /* Adjust size as needed */
   height: auto;
 }
 
@@ -36,39 +36,6 @@ header {
   color: #0071bc;
   text-align: center;
   margin: 0;
-}
-
-.search-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.5rem 2rem;
-  background: #1c1c1c;
-}
-
-.search-input {
-  padding: 0.5rem 1rem;
-  border: 1px solid #333;
-  border-radius: 4px;
-  background: #333;
-  color: white;
-  width: 200px;
-  margin-right: 0.5rem;
-}
-
-.search-input::placeholder {
-  color: #999;
-}
-
-.search-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 nav ul {
