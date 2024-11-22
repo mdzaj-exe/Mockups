@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #003875;
+  --secondary-color: #205493;
+  --text-color: #212121;
+  --background-light: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.gov-banner {
+  background: var(--background-light);
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.main-header {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.top-nav a,
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.main-nav {
+  background: var(--secondary-color);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("hero-bg.jpg");
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.help-section {
+  padding: 2rem;
+  background: #1d1d1d; /* Dark background like the IRS site */
+  color: white;
+}
+
+.help-section h2 {
+  font-weight: bold;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  background: none;
+}
+
+.help-item {
+  color: #00a3ea; /* Light blue color for links */
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.help-item:hover {
+  text-decoration: underline;
+}
+
+.sign-in {
+  background: none;
+  color: #00a3ea;
+}
+
+.tools-section,
+.news-section {
+  padding: 3rem 2rem;
+  background: #1d1d1d;
+  color: white;
+}
+
+.tools-section h2,
+.news-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tool-card,
+.news-card {
+  background: #2a2a2a;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.tool-card h3,
+.news-card h3 {
+  color: white;
+  margin: 1rem 0;
+}
+
+.tool-card img,
+.news-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tool-link,
+.news-link {
+  color: #00a3ea;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.tool-link:hover,
+.news-link:hover {
+  text-decoration: underline;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #666;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #fff;
+}
+
+@media (max-width: 1024px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tools-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 2rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+}
