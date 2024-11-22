@@ -1,0 +1,83 @@
+:root {
+  --primary-blue: #0071bc;
+  --dark-blue: #004d82;
+  --light-gray: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("chart-background.jpg");
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+/* Featured Cards */
+.featured-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* SDR Section */
+.sdr-section {
+  background: var(--light-gray);
+  padding: 2rem;
+  text-align: center;
+}
+
+.sdr-tools {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Footer */
+footer {
+  background: var(--dark-blue);
+  color: white;
+  padding: 2rem;
+}
